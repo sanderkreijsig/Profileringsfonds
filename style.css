@@ -1,0 +1,72 @@
+body {
+    font-family: CeraPro;
+    font-weight: 500;
+}
+/*#main {*/
+/*    font-size: xx-large;*/
+/*    text-align: center;*/
+/*    padding: 50px;*/
+/*}*/
+
+.jumbotron{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: black;
+    border-bottom: 10px;
+}
+
+.navbar{
+    background-color: rgb(59, 104, 187);
+    text-align: right;
+}
+/*.nav-link{*/
+/*    color: black;*/
+/*}*/
+
+
+.navbar-brand{
+    text-align: right;
+}
+
+#links a:link{
+    color: white;
+}
+
+
+#links a:hover{
+    color: darkblue;
+}
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+.input-group input{
+    height: 30px;
+    width: 50%;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+}
+.input-group label{
+
+    display: block;
+    text-align: center;
+    margin: 3px;
+}
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: darkslateblue;
+    background: darkblue;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    font-size: 15px;
+    color: darkslateblue;
+    background: #5F9EA0;
+    border: 1px solid #686868;
+    border-radius: 5px;
+}
+

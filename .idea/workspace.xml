@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7165d565-14a9-406f-bea4-e0d82e9f5c07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/errors.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FAQ.php" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZG3kZtMrfpc1hfmXOk8KayJlKI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7165d565-14a9-406f-bea4-e0d82e9f5c07" name="Default Changelist" comment="" />
+      <created>1584451746253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584451746253</updated>
+      <workItem from="1584451747402" duration="6406000" />
+      <workItem from="1584543754766" duration="2562000" />
+      <workItem from="1584613853247" duration="5132000" />
+      <workItem from="1584660711084" duration="243000" />
+      <workItem from="1584695010043" duration="11514000" />
+      <workItem from="1584710184291" duration="130000" />
+      <workItem from="1584710346123" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Profileringsfonds" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="506" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584451944720">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="506" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584451944720" />
+    <state x="320" y="163" key="SettingsEditor" timestamp="1584710254563">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="320" y="163" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584710254563" />
+    <state x="760" y="153" width="568" height="703" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584705449422">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="760" y="153" width="568" height="703" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584705449422" />
+    <state x="732" y="289" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584453948319">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="732" y="289" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584453948319" />
+    <state x="613" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1584710346397">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="613" y="367" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584710346397" />
+  </component>
+</project>
