@@ -19,18 +19,20 @@
 
     <!-- Links -->
     <div id="links">
-
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="#">Start aanvraag</a>
             </li>
             <li class="nav-item">
+
                 <a class="nav-link" href="info.php">Informatie</a>
+
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="FAQ.php">FAQ</a>
             </li>
             <li class="nav-item">
+
                 <a class="nav-link" href="login.php">Login</a>
             </li>
             <li>
@@ -39,6 +41,7 @@
             <li>
                 <img src="images/globe.png" width="50px">
             </li>
+
             <li class="nav-item">
                 <a href="#" data-lang="nl">NL</a>
             </li>/

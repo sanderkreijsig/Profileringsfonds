@@ -1,8 +1,10 @@
+
 <?php include('server.php')?>
 <!DOCTYPE html>
 <head>
     <title>Profileringsfonds landing page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
     <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -30,6 +32,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="info.php">Informatie</a>
+
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="FAQ.php">FAQ</a>
@@ -53,8 +56,6 @@
     </div>
 </nav>
 
-
-
 <div class="container">
     <div class="row">
         <div class="col-1"></div>
@@ -73,12 +74,10 @@
             </p>
         </form>
         </div>
-
         <div class="col-1"></div>
 
     </div>
 </div>
-
 
 
 </body>

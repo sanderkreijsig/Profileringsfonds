@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+
     <list default="true" id="7165d565-14a9-406f-bea4-e0d82e9f5c07" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -12,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,24 +38,30 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+
         <item name="profileringsfonds@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="profileringsfonds@localhost" type="feb32156:DbDataSourceImpl" />
+
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+
         <item name="profileringsfonds@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="profileringsfonds: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
+
     </expand>
     <select />
   </component>
   <component name="Git.Settings">
+
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+
   </component>
   <component name="ProjectId" id="1ZG3kZtMrfpc1hfmXOk8KayJlKI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -65,10 +73,12 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -84,15 +94,18 @@
       <workItem from="1584543754766" duration="2562000" />
       <workItem from="1584613853247" duration="5132000" />
       <workItem from="1584660711084" duration="243000" />
+
       <workItem from="1584695010043" duration="11514000" />
       <workItem from="1584710184291" duration="130000" />
       <workItem from="1584710346123" duration="7000" />
+
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/Profileringsfonds" />
@@ -119,5 +132,6 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="613" y="367" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584710346397" />
+
   </component>
 </project>

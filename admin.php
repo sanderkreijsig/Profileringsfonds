@@ -1,3 +1,4 @@
+
 <?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,7 +72,6 @@
     <button type="submit" name="register">Voeg toe</button>
 </form>
 </div>
-
 </body>
 </html>
 
