@@ -1,8 +1,9 @@
-
+<?php include('server.php')?>
 <?php
-session_start();?>
+if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_SESSION['id']);}?>
 
 <!--123PHP.Test.Email123@gmail.com profilering-->
+
 
 <!DOCTYPE html>
 <head>
@@ -30,7 +31,7 @@ session_start();?>
     <div id="links">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Start aanvraag</a>
+                <a method="post" class="nav-link" href="formulier.php" name="start_form">Start aanvraag</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="info.php">Informatie</a>
@@ -38,12 +39,15 @@ session_start();?>
             <li class="nav-item">
                 <a class="nav-link" href="FAQ.php">FAQ</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="login.php">Login</a>
-            </li>
-            <li>
-                <a class="nav-link" href="admin.php">admin</a>
-            </li>
+
+            <?php if (!isset($_SESSION['user'])) : ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">Login</a>
+                </li>
+            <?php endif?>
+                <li>
+                    <a class="nav-link" href="admin.php">admin</a>
+                </li>
             <li>
                 <img src="images/globe.png" width="50px">
             </li>
@@ -53,6 +57,15 @@ session_start();?>
             <li class="nav-item active" >
                 <a href="#" data-lang="en">ENG</a>
             </li>
+        </ul>
+        <ul class="navbar-nav" style="alignment: right">
+            <?php if (isset($_SESSION['user'])) : ?>
+                <div class="success">
+                    <li>
+                        Ingelogd als <?php echo $_SESSION['user'];?> --- <a style="color: darkslateblue" href="index.php?logout='1'">Log uit</a>
+                    </li>
+                </div>
+            <?php endif?>
         </ul>
     </div>
 </nav>
@@ -65,7 +78,7 @@ session_start();?>
     <p class="lead">NHL Stenden</p>
     <hr class="my-2">
     <p class="lead">
-       <br><br><a class="btn btn-primary btn-lg" href="login.php" role="button">Start aanvraag</a>
+       <br><br><a class="btn btn-primary btn-lg" href="formulier.php" role="button">Start aanvraag</a>
     </p>
 </div>
 <p id="main" style="background-color: aliceblue; text-align: center; padding: 80px; margin-left: 100px; margin-right: 100px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur corporis dignissimos et excepturi officiis perspiciatis quae quaerat quidem, reprehenderit? Autem dolore exercitationem magni non pariatur repellat repellendus reprehenderit sit.</span><span>Alias aspernatur beatae commodi cum cumque cupiditate debitis et ex, facilis fuga hic illo ipsam iste maiores minima nesciunt nulla odio pariatur possimus provident quam qui similique suscipit totam, voluptatibus?</span><span>Accusamus amet aspernatur aut culpa cum dolorum eaque enim facere, fuga harum impedit inventore maxime nesciunt nisi nobis officiis porro quo. Inventore porro qui repellat sequi! Corporis hic totam unde?</span><span>Alias animi architecto assumenda deserunt dolore ea fuga fugit harum itaque modi, nihil nostrum numquam perferendis praesentium quidem temporibus tenetur vel voluptatem. Adipisci facilis id illum modi officiis possimus voluptates.</span><span>Autem eligendi possimus vero voluptas. Distinctio laboriosam quis tenetur voluptas. Beatae consequatur deserunt dolorem enim eveniet fugit labore, laboriosam modi neque numquam officia omnis pariatur possimus qui quos rem suscipit.

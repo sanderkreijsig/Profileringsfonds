@@ -1,3 +1,7 @@
+<?php include('server.php')?>
+<?php
+if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_SESSION['id']);}?>
+
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
@@ -21,7 +25,7 @@
     <div id="links">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Start aanvraag</a>
+                <a method="post" class="nav-link" href="formulier.php" name="start_form">Start aanvraag</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="info.php">Informatie</a>
@@ -29,9 +33,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="FAQ.php">FAQ</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="login.php">Login</a>
-            </li>
+
+            <?php if (!isset($_SESSION['user'])) : ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">Login</a>
+                </li>
+            <?php endif?>
             <li>
                 <a class="nav-link" href="admin.php">admin</a>
             </li>
@@ -44,6 +51,15 @@
             <li class="nav-item active" >
                 <a href="#" data-lang="en">ENG</a>
             </li>
+        </ul>
+        <ul class="navbar-nav" style="alignment: right">
+            <?php if (isset($_SESSION['user'])) : ?>
+                <div class="success">
+                    <li>
+                        Ingelogd als <?php echo $_SESSION['user'];?> --- <a style="color: darkslateblue" href="index.php?logout='1'">Log uit</a>
+                    </li>
+                </div>
+            <?php endif?>
         </ul>
     </div>
 </nav>

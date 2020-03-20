@@ -1,5 +1,6 @@
-
 <?php include('server.php')?>
+<?php
+if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_SESSION['id']);}?>
 <!DOCTYPE html>
 <head>
     <title>Profileringsfonds landing page</title>
@@ -25,21 +26,22 @@
 
     <!-- Links -->
     <div id="links">
-
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Start aanvraag</a>
+                <a method="post" class="nav-link" href="formulier.php" name="start_form">Start aanvraag</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="info.php">Informatie</a>
-
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="FAQ.php">FAQ</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="login.php">Login</a>
-            </li>
+
+            <?php if (!isset($_SESSION['user'])) : ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">Login</a>
+                </li>
+            <?php endif?>
             <li>
                 <a class="nav-link" href="admin.php">admin</a>
             </li>
@@ -53,6 +55,15 @@
                 <a href="#" data-lang="en">ENG</a>
             </li>
         </ul>
+        <ul class="navbar-nav" style="alignment: right">
+            <?php if (isset($_SESSION['user'])) : ?>
+                <div class="success">
+                    <li>
+                        Ingelogd als <?php echo $_SESSION['user'];?> --- <a style="color: darkslateblue" href="index.php?logout='1'">Log uit</a>
+                    </li>
+                </div>
+            <?php endif?>
+        </ul>
     </div>
 </nav>
 
@@ -65,7 +76,7 @@
             <?php include('errors.php')?>
             <label>Gebruikersnaam</label>
             <input type="text" name="email" placeholder="voornaam.achternaam@student.nhlstenden.com">
-<br><br><br>
+<br><br>
             <label>Wachtwoord</label>
             <input type="password" name="password">
             <button type="submit" class="btn" name="login_user">Login</button>

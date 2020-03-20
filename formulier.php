@@ -2,10 +2,8 @@
 <?php
 if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_SESSION['id']);}?>
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Create account</title>
+    <title>Profileringsfonds landing page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,8 +14,9 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
+<!-- navbar -->
 <nav class="navbar navbar-expand-sm" >
 
     <a class="navbar-brand" href="index.php">
@@ -67,24 +66,6 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
     </div>
 </nav>
 
-<!--register account-->
-<div class="input-group">
-    <?php include('errors.php') ?>
-    <?php if (isset($_SESSION['success'])) : ?>
-    <div class="success">
-        <h3>
-            <?php echo $_SESSION['success'];
-            unset($_SESSION['success']);?>
-        </h3>
-    </div>
-    <?php endif?>
-<form method="POST" action="admin.php">
-    <label>Email: </label><input type="email" name="email_1" value="<?php echo $email_1; ?>"> <br />
-    <label>Bevestig email: </label><input type="email" name="email_2" value="<?php echo $email_2; ?>" > <br />
-    <button type="submit" name="register">Voeg toe</button>
-</form>
-</div>
+
+
 </body>
-</html>
-
-

@@ -88,5 +88,10 @@ button {
     border-radius: 5px;
     justify-content: center;
 }
-
+.success{
+    text-align: right;
+    color: whitesmoke;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
 

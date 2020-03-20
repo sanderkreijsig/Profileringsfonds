@@ -12,8 +12,7 @@ $name = 'root';
 $pass = 'root';
 $database = 'profileringsfonds';
 
-
-
+    //verbinding met database + errormsg
     $conn = mysqli_connect($host, $name, $pass, $database);
     $query = "SELECT * FROM users";
 
@@ -57,5 +56,36 @@ $database = 'profileringsfonds';
              $_SESSION['success'] = $email_1 . " succesvol toegevoegd met wachtwoord " . $password;
              //header('location: index.php');
          }
+         mysqli_close($conn);
      }
+
+
+     if(isset($_POST['login_user'])){
+         $email = mysqli_real_escape_string($conn, $_POST['email']);
+         $password = mysqli_real_escape_string($conn, $_POST['password']);
+         if(empty($email)){array_push($errors, "Gebruikersnaam moet worden ingevoerd");}
+         if(empty($password)){array_push($errors, "Wachtwoord moet worden ingevoerd");}
+
+         if(count($errors) == 0){
+             $password = md5($password);
+             $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+             $result = mysqli_query($conn, $query);
+
+             $typequery = "SELECT type FROM users WHERE email='$email' AND password='$password'";
+             $gettype = mysqli_query($conn, $typequery);
+
+             if(mysqli_num_rows($result) == 1){while($row = $gettype->fetch_assoc()){$_SESSION['id'] = $row['uID'];$_SESSION['type'] = $row['type'];}}
+
+             $_SESSION['user'] = $email;
+             header('location: index.php');
+         } else {array_push($errors, "Verkeerde gebruikersnaam/wachtwoord combinatie");}
+     }
+
+
+//     if(isset($_POST['start_form'])){
+//         if(!isset($_SESSION['id'])){
+//
+//         }
+//     }
+
 ?>
