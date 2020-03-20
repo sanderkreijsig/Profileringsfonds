@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7165d565-14a9-406f-bea4-e0d82e9f5c07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/errors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FAQ.php" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errors.php" beforeDir="false" afterPath="$PROJECT_DIR$/errors.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/info.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +33,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="profileringsfonds@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="profileringsfonds@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="profileringsfonds@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="profileringsfonds: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -50,6 +65,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -83,22 +99,22 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="506" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584451944720">
+    <state x="506" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584716981962">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="506" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584451944720" />
+    <state x="506" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584716981962" />
     <state x="320" y="163" key="SettingsEditor" timestamp="1584710254563">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="320" y="163" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584710254563" />
-    <state x="760" y="153" width="568" height="703" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584705449422">
+    <state x="760" y="153" width="568" height="703" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584715576946">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="760" y="153" width="568" height="703" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584705449422" />
-    <state x="732" y="289" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584453948319">
+    <state x="760" y="153" width="568" height="703" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584715576946" />
+    <state x="1005" y="221" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584715506745">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="732" y="289" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584453948319" />
+    <state x="1005" y="221" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584715506745" />
     <state x="613" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1584710346397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -57,10 +57,18 @@
 <!--register account-->
 <div class="input-group">
     <?php include('errors.php') ?>
-<form class="jumbotron" method="post" action="server.php">
-    <label>Email: </label><input type="email" name="email1" > <br />
-    <label>Bevestig email: </label><input type="email" name="email2" > <br />
-    <button type="submit" name="reg_user">Voeg toe</button>
+    <?php if (isset($_SESSION['success'])) : ?>
+    <div class="success">
+        <h3>
+            <?php echo $_SESSION['success'];
+            unset($_SESSION['success']);?>
+        </h3>
+    </div>
+    <?php endif?>
+<form method="POST" action="admin.php">
+    <label>Email: </label><input type="email" name="email_1" value="<?php echo $email_1; ?>"> <br />
+    <label>Bevestig email: </label><input type="email" name="email_2" value="<?php echo $email_2; ?>" > <br />
+    <button type="submit" name="register">Voeg toe</button>
 </form>
 </div>
 

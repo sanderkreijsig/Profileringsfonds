@@ -53,22 +53,32 @@
     </div>
 </nav>
 
-<form method="post" action="login.php">
-    <?php include('errors.php')?>
-    <div class="input-group">
-    <label>Gebruikersnaam (E-mail)</label>
-    <input type="text" name="email" placeholder="voornaam.achternaam@student.nhlstenden.com">
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="input-group col-10">
+
+        <form method="post" action="login.php">
+            <?php include('errors.php')?>
+            <label>Gebruikersnaam</label>
+            <input type="text" name="email" placeholder="voornaam.achternaam@student.nhlstenden.com">
+<br><br><br>
+            <label>Wachtwoord</label>
+            <input type="password" name="password">
+            <button type="submit" class="btn" name="login_user">Login</button>
+            <p>
+                Nog geen gebruikersaccount? Klik <a href="FAQ.php">hier</a> voor veelgestelde vragen.
+            </p>
+        </form>
+        </div>
+
+        <div class="col-1"></div>
+
     </div>
-    <div class="input-group">
-        <label>Wachtwoord</label>
-        <input type="password" name="password">
-    </div>
-    <div class="input-group">
-        <button type="submit" class="btn" name="login_user">Login</button>
-    </div>
-    <p>
-        Nog geen gebruikersaccount? Klik <a href="FAQ.php">hier</a> voor veelgestelde vragen.
-    </p>
-</form>
+</div>
+
+
 
 </body>
