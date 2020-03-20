@@ -1,7 +1,10 @@
+
+<?php include('server.php')?>
 <!DOCTYPE html>
 <head>
     <title>Profileringsfonds landing page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -22,20 +25,27 @@
 
     <!-- Links -->
     <div id="links">
+
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="#">Start aanvraag</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="info.php">informatie</a>
+                <a class="nav-link" href="info.php">Informatie</a>
+
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="FAQ.php">FAQ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="login.php">login</a>
+                <a class="nav-link" href="login.php">Login</a>
             </li>
-            <img src="images/globe.png" width="50px">
+            <li>
+                <a class="nav-link" href="admin.php">admin</a>
+            </li>
+            <li>
+                <img src="images/globe.png" width="50px">
+            </li>
             <li class="nav-item">
                 <a href="#" data-lang="nl">NL</a>
             </li>/
@@ -46,12 +56,28 @@
     </div>
 </nav>
 
-<form class="jumbotron">
-    <label>Login</label>
-    <input type="text" name="username">
+<div class="container">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="input-group col-10">
 
-    <input type="submit" value="log in">
+        <form method="post" action="login.php">
+            <?php include('errors.php')?>
+            <label>Gebruikersnaam</label>
+            <input type="text" name="email" placeholder="voornaam.achternaam@student.nhlstenden.com">
+<br><br><br>
+            <label>Wachtwoord</label>
+            <input type="password" name="password">
+            <button type="submit" class="btn" name="login_user">Login</button>
+            <p>
+                Nog geen gebruikersaccount? Klik <a href="FAQ.php">hier</a> voor veelgestelde vragen.
+            </p>
+        </form>
+        </div>
+        <div class="col-1"></div>
 
-</form>
+    </div>
+</div>
+
 
 </body>

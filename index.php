@@ -1,4 +1,6 @@
 
+<?php
+session_start();?>
 
 <!--123PHP.Test.Email123@gmail.com profilering-->
 
@@ -34,12 +36,17 @@
                 <a class="nav-link" href="info.php">Informatie</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="admin.php">FAQ</a>
+                <a class="nav-link" href="FAQ.php">FAQ</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="login.php">Login</a>
             </li>
-            <img src="images/globe.png" width="50px">
+            <li>
+                <a class="nav-link" href="admin.php">admin</a>
+            </li>
+            <li>
+                <img src="images/globe.png" width="50px">
+            </li>
             <li class="nav-item">
                 <a href="#" data-lang="nl">NL</a>
             </li>/

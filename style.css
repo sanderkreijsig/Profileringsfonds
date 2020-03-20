@@ -20,7 +20,7 @@ body {
     text-align: right;
 }
 .nav-link{
-    color: black;
+    color: white;
 }
 
 
@@ -36,4 +36,57 @@ body {
 #links a:hover{
     color: darkblue;
 }
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.header{
+    text-align: center;
+}
+form .content{
+    width: 30%;
+    margin: 10px 10px 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+.input-group input{
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+}
+label {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+}
+.input-group label{
+
+
+    margin: 3px;
+
+
+}
+.btn {
+    padding: 30px;
+    font-size: 15px;
+    color: darkslateblue;
+    background: darkblue;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+}
+button {
+    padding: 30px;
+    font-size: 15px;
+    color: darkslateblue;
+    background: #5F9EA0;
+    border: 1px solid #686868;
+    border-radius: 5px;
+    justify-content: center;
+}
+
 
