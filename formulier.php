@@ -1,4 +1,5 @@
 <?php include('server.php')?>
+<?php include('update_formulier.php')?>
 <?php
 if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_SESSION['id']);}?>
 <!DOCTYPE html>
@@ -65,6 +66,8 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
         </ul>
     </div>     
 </nav>
+
+
 <div class="header">
     <h2>Persoonlijke gegevens</h2>
 </div>
@@ -72,47 +75,47 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
     <form method="post">
     <div class="input-group">
         <label>Studentnummer</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="studentnr" value="<?php echo $studentnr; ?>">
     </div>
     <div class="input-group">
         <label>Achternaam</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="achternaam" value="<?php echo $achternaam; ?>">
     </div>
     <div class="input-group">
         <label>Roepnaam</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="roepnaam" value="<?php echo $roepnaam; ?>">
     </div>
     <div class="input-group">
         <label>Geboortedatum</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="gdatum" value="<?php echo $gdatum; ?>">
     </div>
     <div class="input-group">
         <label>Adres</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="adres" value="<?php echo $adres; ?>">
     </div>
     <div class="input-group">
         <label>Postcode</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="postcode" value="<?php echo $postcode; ?>">
     </div>
     <div class="input-group">
         <label>Woonplaats</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="woonplaats" value="<?php echo $woonplaats; ?>">
     </div>
     <div class="input-group">
         <label>Telefoonnummer</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="telnr" value="<?php echo $telnr; ?>">
     </div>
     <div class="input-group">
         <label>E-mailadres</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="emailadres" value="<?php echo $emailadres; ?>">
     </div>
     <div class="input-group">
         <label>BSN-nummer</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="bsn" value="<?php echo $bsn; ?>">
     </div>
     <div class="input-group">
         <label>IBAN rekeningnummer</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
+        <input type="text" name="iban" value="<?php echo $iban; ?>">
     </div>       
 
 
