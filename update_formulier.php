@@ -13,4 +13,11 @@ $bsn = "";
 $iban = "";
 
 
+
+if(!isset($_SESSION['user'])){
+    array_push($errors, "U moet eerst inloggen");
+    header('location: login.php');
+}
+
+
 ?>

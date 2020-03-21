@@ -16,8 +16,11 @@ body {
 }
 
 .navbar{
+    background-image: url(images/headeropac.png);
     background-color: rgb(59, 104, 187);
     text-align: right;
+    border: 1px solid darkblue;
+    border-collapse: collapse;
 }
 .nav-link{
     color: white;
@@ -64,11 +67,7 @@ label {
     text-align: right;
 }
 .input-group label{
-
-
     margin: 3px;
-
-
 }
 .btn {
     padding: 30px;
@@ -93,5 +92,9 @@ button {
     color: whitesmoke;
     border: 2px solid darkblue;
     border-radius: 5px;
+}
+.error{
+    text-align: center;
+    color: darkred;
 }
 

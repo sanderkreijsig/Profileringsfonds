@@ -50,35 +50,42 @@ $database = 'profileringsfonds';
              mysqli_query($conn, $query);
 
              //Session ID zetten
-             $query = "SELECT uID FROM users WHERE email='$email_1'";
-             $result = mysqli_query($conn, $query);
-             if(mysqli_num_rows($result) == 1){while($row = $result->fetch_assoc()){$_SESSION['id'] = $row['uID'];}}
              $_SESSION['success'] = $email_1 . " succesvol toegevoegd met wachtwoord " . $password;
              //header('location: index.php');
          }
          mysqli_close($conn);
      }
 
-
+    //login
      if(isset($_POST['login_user'])){
          $email = mysqli_real_escape_string($conn, $_POST['email']);
          $password = mysqli_real_escape_string($conn, $_POST['password']);
-         if(empty($email)){array_push($errors, "Gebruikersnaam moet worden ingevoerd");}
-         if(empty($password)){array_push($errors, "Wachtwoord moet worden ingevoerd");}
+         if(empty($email)){array_push($errors, "Ongeldige gebruikersnaam");}
+         if(empty($password)){array_push($errors, "Ongeldig wachtwoord");}
 
          if(count($errors) == 0){
              $password = md5($password);
              $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
              $result = mysqli_query($conn, $query);
 
-             $typequery = "SELECT type FROM users WHERE email='$email' AND password='$password'";
-             $gettype = mysqli_query($conn, $typequery);
+             if(mysqli_num_rows($result) == 1){
+                 while($row = $result->fetch_assoc()) {
+                     $_SESSION['id'] = $row['uID'];
+                     $_SESSION['type'] = $row['type'];
+                     $_SESSION['user'] = $email;
+                     header('location: index.php');
+                     if(isset($_SESSION['type'])){
+                         if($_SESSION['type'] == 1){
+                             $_SESSION['admin'] = true;
+                         }
+                     }
+                 }
+             }
 
-             if(mysqli_num_rows($result) == 1){while($row = $gettype->fetch_assoc()){$_SESSION['id'] = $row['uID'];$_SESSION['type'] = $row['type'];}}
 
-             $_SESSION['user'] = $email;
-             header('location: index.php');
-         } else {array_push($errors, "Verkeerde gebruikersnaam/wachtwoord combinatie");}
+
+
+         } else {array_push($errors, "Ongeldige gebruikersnaam/wachtwoord combinatie");}
      }
 
 

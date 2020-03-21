@@ -1,6 +1,6 @@
 <?php include('server.php')?>
 <?php
-if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_SESSION['id']);}?>
+if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_SESSION['id']); header('location: index.php');}?>
 <!DOCTYPE html>
 <head>
     <title>Profileringsfonds landing page</title>
@@ -42,9 +42,11 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
                     <a class="nav-link" href="login.php">Login</a>
                 </li>
             <?php endif?>
-            <li>
-                <a class="nav-link" href="admin.php">admin</a>
-            </li>
+            <?php if(isset($_SESSION['admin'])) : ?>
+                <li>
+                    <a class="nav-link" href="admin.php">admin</a>
+                </li>
+            <?php endif?>
             <li>
                 <img src="images/globe.png" width="50px">
             </li>
@@ -67,10 +69,12 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
     </div>
 </nav>
 
+<div style="background-image: url(images/headeropac.png)">
 <div class="container">
     <div class="row">
+
         <div class="col-1"></div>
-        <div class="input-group col-10">
+        <div class="input-group col-10" >
 
         <form method="post" action="login.php">
             <?php include('errors.php')?>
@@ -89,6 +93,6 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
 
     </div>
 </div>
-
+</div>
 
 </body>

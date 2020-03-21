@@ -42,9 +42,11 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
                     <a class="nav-link" href="login.php">Login</a>
                 </li>
             <?php endif?>
-            <li>
-                <a class="nav-link" href="admin.php">admin</a>
-            </li>
+            <?php if(isset($_SESSION['admin'])) : ?>
+                <li>
+                    <a class="nav-link" href="admin.php">admin</a>
+                </li>
+            <?php endif?>
             <li>
                 <img src="images/globe.png" width="50px">
             </li>
@@ -68,21 +70,26 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
 </nav>
 
 <!--register account-->
-<div class="input-group">
+<div class="row">
+
+    <div class="input-group col-6">
     <?php include('errors.php') ?>
     <?php if (isset($_SESSION['success'])) : ?>
-    <div class="success">
-        <h3>
+        <div class="success">
+            <h3>
             <?php echo $_SESSION['success'];
             unset($_SESSION['success']);?>
-        </h3>
-    </div>
+            </h3>
+        </div>
     <?php endif?>
-<form method="POST" action="admin.php">
-    <label>Email: </label><input type="email" name="email_1" value="<?php echo $email_1; ?>"> <br />
-    <label>Bevestig email: </label><input type="email" name="email_2" value="<?php echo $email_2; ?>" > <br />
-    <button type="submit" name="register">Voeg toe</button>
-</form>
+        <form method="POST" action="admin.php">
+            <label>Email: </label><input type="email" name="email_1" value="<?php echo $email_1; ?>"> <br />
+            <label>Bevestig email: </label><input type="email" name="email_2" value="<?php echo $email_2; ?>" > <br />
+            <button type="submit" name="register">Voeg toe</button>
+        </form>
+    </div>
+
+<div class="col-6"></div>
 </div>
 </body>
 </html>

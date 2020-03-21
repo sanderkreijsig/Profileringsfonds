@@ -1,6 +1,6 @@
 <?php include('server.php')?>
 <?php
-if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_SESSION['id']);}?>
+if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_SESSION['id']); header('location: index.php');}?>
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
@@ -38,9 +38,11 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
                     <a class="nav-link" href="login.php">Login</a>
                 </li>
             <?php endif?>
-            <li>
-                <a class="nav-link" href="admin.php">admin</a>
-            </li>
+            <?php if(isset($_SESSION['admin'])) : ?>
+                <li>
+                    <a class="nav-link" href="admin.php">admin</a>
+                </li>
+            <?php endif?>
             <li>
                 <img src="images/globe.png" width="50px">
             </li>
