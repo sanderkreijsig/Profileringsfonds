@@ -1,6 +1,8 @@
-body {
+body{
     font-family: CeraPro;
     font-weight: 500;
+
+
 }
 /*#main {*/
 /*    font-size: xx-large;*/
@@ -97,4 +99,7 @@ button {
     text-align: center;
     color: darkred;
 }
-
+footer {
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+}

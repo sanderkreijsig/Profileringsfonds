@@ -65,5 +65,36 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
         </ul>
     </div>
 </nav>
+
+
+
+
+<!-- Footer -->
+<footer class="footer fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="footer text-center py-3 col-3">
+                <a href="https://start.nhlstenden.com/">
+                    <img src="images/Logo1.png" alt="logo" style="width:50px;">
+                </a>
+            </div>
+            <div class="footer-copyright text-center py-3 col-3">© 2020 Copyright:
+                <a href="https://nhlstenden.com/"> Nhlstenden.com</a>
+            </div>
+            <div class="footer text-center py-3 col-3">
+                <a href="https://intranet.nhlstenden.com/" style="font-family: sans-serif; font-size: 20px; color: black">
+                    <img src="images/intranetblue.png" alt="Intranet" style="width:50px">
+                </a>
+            </div>
+            <div class="footer text-center py-3 col-3">
+                <a href="https://trello.com/b/Aa0nRn8M/selecta">
+                    <img src="images/selecta.png" alt="selecta" style="width:100px;">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </htmL>
+
