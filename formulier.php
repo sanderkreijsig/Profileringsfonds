@@ -63,8 +63,57 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
                 </div>
             <?php endif?>
         </ul>
-    </div>
+    </div>     
 </nav>
+<div class="header">
+    <h2>Persoonlijke gegevens</h2>
+</div>
+    <div>
+    <form method="post">
+    <div class="input-group">
+        <label>Studentnummer</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>Achternaam</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>Roepnaam</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>Geboortedatum</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>Adres</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>Postcode</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>Woonplaats</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>Telefoonnummer</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>E-mailadres</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>BSN-nummer</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+        <label>IBAN rekeningnummer</label>
+        <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>       
 
 
 
