@@ -50,8 +50,9 @@ $database = 'profileringsfonds';
              mysqli_query($conn, $query);
 
              //Session ID zetten
-             $_SESSION['success'] = $email_1 . " succesvol toegevoegd met wachtwoord " . $password;
-             //header('location: index.php');
+             $_SESSION['reg'] = $email_1 . " succesvol toegevoegd met wachtwoord " . $password;
+             $email_1 = "";
+             $email_2 = "";
          }
          mysqli_close($conn);
      }
@@ -88,11 +89,5 @@ $database = 'profileringsfonds';
          } else {array_push($errors, "Ongeldige gebruikersnaam/wachtwoord combinatie");}
      }
 
-
-//     if(isset($_POST['start_form'])){
-//         if(!isset($_SESSION['id'])){
-//
-//         }
-//     }
 
 ?>

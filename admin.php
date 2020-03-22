@@ -14,19 +14,20 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background: url(images/bg-page.png) no-repeat center center fixed; background-size: cover; ">
 
-<nav class="navbar navbar-expand-sm" >
-
-    <a class="navbar-brand" href="index.php">
-        <img src="images/Logo1.png" alt="logo" style="width:150px;">
-    </a>
-
+<nav class="navbar navbar-expand-sm justify-content-between" >
     <!-- Links -->
     <div id="links">
         <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="index.php">
+                    <img src="images/Logo1.png" alt="logo" style="width:150px;">
+                </a>
+            </li>
             <li class="nav-item">
                 <a method="post" class="nav-link" href="formulier.php" name="start_form">Start aanvraag</a>
             </li>
@@ -67,30 +68,43 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
             <?php endif?>
         </ul>
     </div>
+    <form class="search form-inline my-2 my-lg-0" action="search.php">
+        <input type="search" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    </form>
 </nav>
 
 <!--register account-->
-<div class="row">
 
-    <div class="input-group col-6">
-    <?php include('errors.php') ?>
-    <?php if (isset($_SESSION['success'])) : ?>
-        <div class="success">
-            <h3>
-            <?php echo $_SESSION['success'];
-            unset($_SESSION['success']);?>
-            </h3>
+
+
+
+        <div class="login">
+            <p class="sign" align="center">Voeg een gebruiker toe</p>
+            <?php include('errors.php') ?>
+            <?php if (isset($_SESSION['reg'])) : ?>
+                    <p style="text-align: center">
+                        <?php echo $_SESSION['reg'];
+                        unset($_SESSION['reg']);?>
+                    </p>
+            <?php endif?>
+
+            <form class="form1" method="post" action="admin.php">
+                <input class="un " name="email_1" type="email" align="center" placeholder="E-mail" value="<?php echo $email_1;?>">
+                <input class="pass" type="email" name="email_2" align="center" placeholder="Bevestig e-mail" value="<?php echo $email_2;?>">
+                <button class="submit" align="center" name="register">Add</button>
         </div>
-    <?php endif?>
-        <form method="POST" action="admin.php">
-            <label>Email: </label><input type="email" name="email_1" value="<?php echo $email_1; ?>"> <br />
-            <label>Bevestig email: </label><input type="email" name="email_2" value="<?php echo $email_2; ?>" > <br />
-            <button type="submit" name="register">Voeg toe</button>
-        </form>
-    </div>
 
-<div class="col-6"></div>
-</div>
+
+
+
+
+
+
+
+
+
 
 
 
