@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7165d565-14a9-406f-bea4-e0d82e9f5c07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Registreren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errors.php" beforeDir="false" afterPath="$PROJECT_DIR$/errors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulier.php" beforeDir="false" afterPath="$PROJECT_DIR$/formulier.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +70,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -94,6 +89,7 @@
       <workItem from="1584695010043" duration="11514000" />
       <workItem from="1584710184291" duration="130000" />
       <workItem from="1584710346123" duration="7000" />
+      <workItem from="1584957213783" duration="1598000" />
     </task>
     <servers />
   </component>
@@ -110,9 +106,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="506" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584720341078" />
-    <state x="320" y="163" key="SettingsEditor" timestamp="1584710254563">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="-1600" y="157" key="SettingsEditor" timestamp="1584962448925">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1600" y="157" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584962448925" />
     <state x="320" y="163" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584710254563" />
     <state x="760" y="153" width="568" height="703" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584715576946">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -122,9 +119,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1005" y="221" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584720361856" />
-    <state x="613" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1584710346397">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="490" y="280" key="com.intellij.ide.util.TipDialog" timestamp="1584957214480">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="490" y="280" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1584957214480" />
     <state x="613" y="367" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1584710346397" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1584728347719">
       <screen x="0" y="0" width="1920" height="1080" />

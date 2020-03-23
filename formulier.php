@@ -81,6 +81,7 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
     <div>
     <form method="post">
     <div class="input-group">
+<<<<<<< Updated upstream
         <label>Studentnummer</label>
         <input type="text" name="studentnr" value="<?php echo $studentnr; ?>">
     </div>
@@ -125,9 +126,218 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
         <input type="text" name="iban" value="<?php echo $iban; ?>">
     </div>
 
+=======
+        <label><b>Studentnummer</b></label>
+        <input type="text" name="studentnummer">
+    </div>
+    <div class="input-group">
+        <label><b>Achternaam</b></label>
+        <input type="text" name="achternaam">
+    </div>
+    <div class="input-group">
+        <label><b>Roepnaam</b></label>
+        <input type="text" name="roepnaam">
+    </div>
+    <div class="input-group">
+        <label><b>Geboortedatum</b></label>
+        <input type="text" name="geboortedatum">
+    </div>
+    <div class="input-group">
+        <label><b>Adres</b></label>
+        <input type="text" name="adres">
+    </div>
+    <div class="input-group">
+        <label><b>Postcode</b></label>
+        <input type="text" name="postcode">
+    </div>
+    <div class="input-group">
+        <label><b>Woonplaats</b></label>
+        <input type="text" name="woonplaats">
+    </div>
+    <div class="input-group">
+        <label><b>Telefoonnummer</b></label>
+        <input type="text" name="tnummer">
+    </div>
+    <div class="input-group">
+        <label><b>E-mailadres</b></label>
+        <input type="text" name="email">
+    </div>
+    <div class="input-group">
+        <label><b>BSN-nummer</b></label>
+        <input type="text" name="bsn">
+    </div>
+    <div class="input-group">
+        <label><b>IBAN rekeningnummer</b></label>
+        <input type="text" name="iban">
+    </div>
+    <div class="header">
+    <h2>Opleidingsgegevens</h2>
+</div>
+<div id="wrapper">
+  <label for="yes_no_radio"><b>Sta jij op het moment van aanvragen
+ingeschreven bij NHL Stenden Hogeschool?</b></label>
+<input type="radio" name="ingeschreven" checked>Ja</input>
+<input type="radio" name="ingeschreven">Nee</input>
+</div>
+<div class="input-group">
+        <label><b>Voor welke opleiding sta jij op dit moment ingeschreven?</b></label>
+        <p><input type="text" name="opleiding"></p>
+    </div>
+    <div id="wrapper">
+  <label for="yes_no_radio"><b>Welke opleidingsvariant volg jij?</b></label>
+<input type="radio" name="variant">Voltijd</input>
+<input type="radio" name="variant">Deeltijd</input>
+<input type="radio" name="variant">Duaal</input>
+</div>
+<div class="input-group">
+        <label><b>Per wanneer ben je met je studie gestart?</b></label>
+        <p><input type="text" name="gestart"></p>
+    </div>
+    <div id="wrapper">
+  <label for="yes_no_radio"><b>In welk studiejaar zit je?</b></label>
+<input type="radio" name="studiejaar">1e</input>
+<input type="radio" name="studiejaar">2e</input>
+<input type="radio" name="studiejaar">3e</input>
+<input type="radio" name="studiejaar">4e</input>
+<input type="radio" name="studiejaar">Oudere jaars</input>
+</div>
+<div id="wrapper">
+  <label for="yes_no_radio"><b>Heb je de studie tussendoor onderbroken?</b></label>
+<input type="radio" name="onderbroken" checked>Ja</input>
+<input type="radio" name="onderbroken">Nee</input>
+</div>
+<div id="wrapper">
+  <label for="yes_no_radio"><b>Heb jij je gedurende de studieonderbreking
+ook uitgeschreven bij NHL Stenden?</b></label>
+<input type="radio" name="uitgeschreven" checked>Ja</input>
+<input type="radio" name="uitgeschreven">Nee</input>
+</div>
+<div id="wrapper">
+  <label for="yes_no_radio"><b>Heb jij je gedurende de studieonderbreking
+ook uitgeschreven bij NHL Stenden?</b></label>
+<input type="radio" name="uitgeschreven" checked>Ja</input>
+<input type="radio" name="uitgeschreven">Nee</input>
+</div>
+<div id="wrapper">
+  <label for="yes_no_radio"><b>Heb je ook voor andere studie(s)
+ingeschreven gestaan bij NHL Stenden?</b></label>
+<input type="radio" name="andere" checked>Ja, vermeld hier welke:  <input type="text" name="welke"> </input>
+<input type="radio" name="andere">Nee</input>
+</div>
+<div class="input-group">
+        <label><b>Heb je eerder een inschrijving bij een
+andere instelling (HBO/Universiteit) gehad?
+Vermeld welke instelling(en) en
+opleiding(en) en van wanneer tot wanneer
+deze inschrijving was. (MBO opleiding(en)
+hoef je niet te vermelden).</b></label>
+        <input type="textbox" name="opleiding">
+    </div>
+    <div id="wrapper">
+  <label for="yes_no_radio"><b>Bijzondere omstandigheden die aanleiding is tot deze aanvraag (kruis aan welke van
+toepassing is):</b></label>
+<p><input type="radio" name="omstandigheid">Ziekte of zwangerschap en bevalling;</input></p>
+<p><input type="radio" name="omstandigheid">Een functiestoornis, handicap of chronische ziekte;</input></p>
+<p><input type="radio" name="omstandigheid">Bijzondere familieomstandigheden;</input></p>
+<p><input type="radio" name="omstandigheid">Een onvoldoende studeerbare opleiding;</input></p>
+<p><input type="radio" name="omstandigheid">De door de hogeschool toegekende status van topsporter;</input></p>
+<p><input type="radio" name="omstandigheid">Andere dan de in de hierboven genoemde onderdelen bedoelde omstandigheden die, indien
+een daarop gebaseerd verzoek om financiële ondersteuning door het College van Bestuur niet
+zou worden gehonoreerd, zouden leiden tot een onbillijkheid van overwegende aard.</input></p>
+<p><input type="radio" name="omstandigheid">Activiteiten op bestuurlijk of maatschappelijk gebied die naar het oordeel van het College van
+Bestuur mede in het belang zijn van de hogeschool of van het onderwijs dat de student volgt;</input></p>
+</div>
+<div class="input-group">
+<p><label><b>Hoeveel maanden studievertraging heb je opgelopen als gevolg van de hierboven aangegeven bijzondere
+omstandigheid c.q. omstandigheden?</b></label></p>
+        <p><input type="text" name="studievertraging"></p>
+    </div>
+    <div id="wrapper">
+  <label for="yes_no_radio"><b>Onder welk stelsel van DUO val jij?</b></label>
+<input type="radio" name="DUO">Prestatiebeurs</input>
+<input type="radio" name="DUO">Leenstelsel (per 1 september 2015)</input>
+</div>
+<div id="wrapper">
+  <label for="yes_no_radio"><b>Heb je recht (gehad) op een extra jaar studiefinanciering/aanvullende beurs via DUO?</b></label>
+<input type="radio" name="extra">Ja -> voeg bewijs* toe bij punt 8</input>
+<input type="radio" name="extra">Nee</input>
+</div>
+<div class="input-group">
+<p><label><b>Hoeveel maanden studievertraging heb je opgelopen als gevolg van de hierboven aangegeven bijzondere
+omstandigheid c.q. omstandigheden?</b></label></p>
+        <p><input type="text" name="studievertraging"></p>
+    </div>
+    <div class="input-group">
+<p><label><b>Hoeveel maanden financiële ondersteuning vraag je
+aan? (Maximaal 12)</b></label></p>
+        <p><input type="text" name="financieel"></p>
+    </div>
+    <div id="wrapper">
+  <label for="yes_no_radio"><b>Heb je eerder financiele steun uit het profileringsfonds ontvangen?</b></label>
+<p><input type="radio" name="extra">Ja, </input><input type="text" name="maand"> maanden in studiejaar <input type="text" name="maand"></p>
+<p><input type="radio" name="extra">Nee</input></p>
+</div>
+<div class="header">
+    <h4>Toelichting van de bijzondere omstandigheid door de aanvrager</h4>
+</div>
+<div>
+    Geef antwoord op de volgende vragen
+            </div>
+<div class="input-group">
+        <label><b>Waaruit bestond de door jou aangevoerde bijzondere omstandigheid?</b></label>
+        <input type="text" name="bijzonder">
+    </div>
+    <div class="input-group">
+        <label><b>Wanneer vond deze plaats en wanneer geëindigd?</b></label>
+        <input type="text" name="plaats">
+    </div>
+    <div class="input-group">
+        <label><b>Op welke datum en bij wie heb je melding gemaakt van deze bijzondere omstandigheid?</b></label>
+        <input type="text" name="wie">
+    </div>
+    <div class="input-group">
+        <label><b>Op welke datum en bij wie heb je de bijzondere omstandigheid eventueel afgemeld?</b></label>
+        <input type="text" name="afgemeld">
+    </div>
+    <div class="input-group">
+        <label><b>Geef aan welke studieonderdelen in welke onderwijsperiode en in welk opleidingsjaar niet
+konden worden gevolgd, voor welke studieonderdelen de mogelijkheid van een herkansing
+bestaat en welke studieonderdelen –wanneer- dienen te worden overgelopen.</b></label>
+        <input type="text" name="nietgevolgd">
+    </div>
+    <div class="input-group">
+        <label><b>Wat is de totale duur van de vertraging?</b></label>
+        <p><input type="text" name="duur"></p>
+    </div>
+    <div class="input-group">
+        <label><b>Op welke wijze heeft de bijzondere omstandigheid het verloop van je studie beïnvloed?</b></label>
+        <input type="text" name="beinvloed">
+    </div>
+    <div class="input-group">
+        <label><b>Op welke wijze heb je geprobeerd de negatieve gevolgen van de bijzondere omstandigheid voor
+jouw studie dan wel studiefinanciering 1 zoveel mogelijk te beperken dan wel te voorkomen
+(raadplegen decaan, tussentijds uitschrijven/stopzetten studiefinanciering)?</b></label>
+        <input type="text" name="negatief">
+</form>
+<div class="header">
+    <p> </p>
+    <p> </p>
+    <h4><b>Verklaring en ondertekening</b></h4>
+</div>
+      <div>  <p>Indien de bijzondere omstandigheid veroorzaakt werd door een derde en je met het oog op de
+aansprakelijkheid een (letselschade-)procedure gaat voeren of deze reeds voert, moet je hiervan
+melding maken.</p>
+>>>>>>> Stashed changes
 
+<p>Indien de schade met betrekking tot studiefinancieringskosten gedekt worden door een
+verzekering en/of in een procedure wordt ingebracht, dan moet je dit per ommegaande melden.</p>
 
+<p>Verklaring en ondertekening
+Door ondertekening verklaar ik hierbij dat ik dit formulier met inbegrip van de
+versterkte informatie naar waarheid heb ingevuld.
+1 = de vorm van financiering van jouw studie die voor jou van toepassing is.</p>
 
+<<<<<<< Updated upstream
 
 
         <!-- Footer -->
@@ -157,3 +367,18 @@ if(isset($_GET['logout'])){session_destroy(); unset($_SESSION['user']); unset($_
         </footer>
 
 </body>
+=======
+<p>Indien voor de beoordeling van je aanvraag gegevens achterwege zijn gelaten en/of
+vragen niet naar waarheid zijn beantwoord, vervalt daarmee iedere aanspraak op het in
+behandeling nemen van je aanvraag.
+In het kader van de AVG wet zou de commissie Profileringsfonds graag willen weten of je akkoord
+gaat met onderstaand:</p>
+ 
+<p>NHL Stenden Hogeschool verwerkt jouw gegevens conform de voorschriften van de Algemene
+Verordening Gegevensbescherming. De gegevens die jij via dit formulier en deze aanvraag
+verstrekt, worden uitsluitend vertrouwelijk gebruikt voor de afhandeling van jouw verzoek aan het
+Profileringsfonds.</p>
+    </div>
+</body>
+</html>
+>>>>>>> Stashed changes
